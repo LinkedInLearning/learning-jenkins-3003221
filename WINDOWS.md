@@ -1,6 +1,4 @@
-# Learning Jenkins, 02-05: Run and Monitor Jobs
-In this lesson you create your first job.
-
+# Learning Jenkins, 02-06: Run and Monitor Jobs
 Use the console to create a freestyle job with one build step.
 
 # WINDOWS SYSTEMS
