@@ -1,4 +1,4 @@
-# Learning Jenkins, 02-06: Run and Monitor Jobs
+# Learning Jenkins, 02-07: Run and Monitor Jobs
 Use the console to create a freestyle job with one build step.
 
 # MacOS, Linux, and Docker
@@ -12,6 +12,7 @@ for i in {1..30}; do
   echo $i;
   sleep 1;
 done
+exit 1
 ```
 
 # Troubleshooting Errors
