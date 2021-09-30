@@ -12,7 +12,7 @@ If you are running Jenkins on a Windows system:
 echo "Hello, Jenkins"
 ```
 
-# Getting an Error in the First Job
+# Troubleshooting Errors
 If you select the `Execute shell` build step, you will see an error similar to the following:
 ```
 Building in workspace C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\hello-jenkins

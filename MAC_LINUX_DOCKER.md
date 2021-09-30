@@ -12,7 +12,7 @@ If you are running Jenkins on MacOS, Linux, or Docker:
 echo "Hello, Jenkins"
 ```
 
-# Getting an Error in the First Job
+# Troubleshooting Errors
 If you select the `Execute Windows batch command` build step, you will see an error similar to the following:
 ```
 Building in workspace /var/jenkins_home/workspace/hello
