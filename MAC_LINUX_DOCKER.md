@@ -1,4 +1,4 @@
-# Learning Jenkins, 03-05: String Parameters
+# Learning Jenkins, 03-06: String Parameters
 Create a freestyle job with one build step.
 
 # MacOS, Linux, and Docker
@@ -8,7 +8,7 @@ If you are running Jenkins on MacOS, Linux, or Docker:
 2. Enter the following for the command:
 ```
 #!/bin/bash
-echo "VERSION_NUMBER = $VERSION_NUMBER"
+echo "ENVIRONMENT = $ENVIRONMENT"
 ```
 
 # Troubleshooting Errors
