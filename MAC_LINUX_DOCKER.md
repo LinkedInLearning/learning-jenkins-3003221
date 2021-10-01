@@ -1,4 +1,4 @@
-# Learning Jenkins, 03-06: String Parameters
+# Learning Jenkins, 03-06: Choice Parameters
 Create a freestyle job with one build step.
 
 # MacOS, Linux, and Docker
