@@ -1,4 +1,4 @@
-# Learning Jenkins, 03-06: Choice Parameters
+# Learning Jenkins, 03-07: Boolean Parameters
 Create a freestyle job with one build step.
 
 # WINDOWS SYSTEMS
