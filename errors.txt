@@ -1,0 +1,10 @@
+Oct 01, 2021 10:39:25 PM Main verifyJavaVersion
+SEVERE: Running with Java class version 61 which is not in the list of supported versions: [52, 55]. Run with the --enable-future-java flag to enable such behavior. See https://jenkins.io/redirect/java-support/
+java.lang.UnsupportedClassVersionError: 61.0
+	at Main.verifyJavaVersion(Main.java:174)
+	at Main.main(Main.java:142)
+
+Jenkins requires Java versions [8, 11] but you are running with Java 17 from C:\Program Files\Java\jdk-17
+java.lang.UnsupportedClassVersionError: 61.0
+	at Main.verifyJavaVersion(Main.java:174)
+	at Main.main(Main.java:142)
