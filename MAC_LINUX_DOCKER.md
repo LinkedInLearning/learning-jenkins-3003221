@@ -8,7 +8,13 @@ If you are running Jenkins on MacOS, Linux, or Docker:
 2. Enter the following for the command:
 ```
 #!/bin/bash
-echo "ENVIRONMENT = $ENVIRONMENT"
+echo "RUN_TESTS = $RUN_TESTS"
+if [ "$RUN_TESTS" = "true" ];
+then
+    echo "RUNNING TESTS!";
+else
+    echo "No tests will be run...";
+fi
 ```
 
 # Troubleshooting Errors
