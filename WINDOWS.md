@@ -7,8 +7,13 @@ If you are running Jenkins on a Windows system:
 1. Select the `Execute Windows batch command` build step
 2. Enter the following for the command:
 ```
-@echo off
-@echo ENVIRONMENT = %ENVIRONMENT%
+@echo OFF
+echo "RUN_TESTS = %RUN_TESTS%"
+IF "%RUN_TESTS%"=="true" (
+    ECHO "RUNNING TESTS!"
+) ELSE (
+    ECHO "No tests will be run"
+)
 ```
 
 # Troubleshooting Errors
