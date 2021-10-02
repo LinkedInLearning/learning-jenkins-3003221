@@ -21,16 +21,6 @@ https://github.com/managedkaos/apache-maven-hello-world
 4. Select the Maven version you configured in the previous step.
 5. For the goal, enter `package`.
 
-# WINDOWS SYSTEMS
-Select the `Execute Windows batch command` build step
-```
-java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
-```
-Save the job and start the build.
-
-[Follow this link for more details on Windows](WINDOWS.md)
-
-
 # MacOS, Linux, and Docker
 Select the `Execute shell` build step.
 ```
@@ -38,4 +28,5 @@ java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
 ```
 Save the job and start the build.
 
-[Follow this link for more details on MacOS, Linux, and Docker](MAC_LINUX_DOCKER.md)
+# Troubleshooting Errors
+

@@ -28,14 +28,5 @@ java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
 ```
 Save the job and start the build.
 
-[Follow this link for more details on Windows](WINDOWS.md)
+# Troubleshooting Errors
 
-
-# MacOS, Linux, and Docker
-Select the `Execute shell` build step.
-```
-java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
-```
-Save the job and start the build.
-
-[Follow this link for more details on MacOS, Linux, and Docker](MAC_LINUX_DOCKER.md)
