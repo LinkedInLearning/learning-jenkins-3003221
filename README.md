@@ -1,34 +1,47 @@
-# Learning Jenkins
-This is the repository for the LinkedIn Learning course `Learning Jenkins`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Learning Jenkins, 03-01: Using a global build tool
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+# Prerequisites
+You will need to configure Maven as a global build tool.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+In the Jenkins web interface, go to:
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+`Manage Jenkins` -> `Global Tool Configuration` -> `Maven installations` -> `Add Maven`.
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Give your Maven installation a name and check the option to `Install automatically`.
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+# Setting up the Jenkins Job
+Create a freestyle job and configure it as follows:
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+1. Under `Source Code Management`, select `Git` and enter the following URL:
+```
+https://github.com/LinkedInLearning/learning-jenkins-3003221
+```
+2. **MAKE SURE TO SET THE `Branch Specifier` to `*/03_01`**.
+3. Add a build step using `Invoke Top-Level Maven Target`.
+4. Select the Maven version you configured in the previous step.
+5. For the goal, enter `package`.
 
+# WINDOWS SYSTEMS
+Select the `Execute Windows batch command` build step
+```
+java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
+```
+Save the job and start the build.
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+[Follow this link for more details on Windows](WINDOWS.md)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+# MacOS, Linux, and Docker
+Select the `Execute shell` build step.
+```
+java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
+```
+Save the job and start the build.
+
+[Follow this link for more details on MacOS, Linux, and Docker](MAC_LINUX_DOCKER.md)
+
+# Troubleshooting Errors
+```
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+```
+This error means you have probably entered the wrong branch under Source Code Management.  You need to enter `*/03_01` for the branch.
 
