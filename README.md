@@ -17,8 +17,8 @@ When switching from one exercise files branch to the next after making changes t
 
 To resolve this issue:
 
-    Add changes to git using this command: `git add .`
-	Commit changes using this command: `git commit -m "some message"`
+1. Add changes to git using this command: `git add .`
+2. Commit changes using this command: `git commit -m "some message"`
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
