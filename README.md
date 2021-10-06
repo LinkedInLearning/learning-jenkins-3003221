@@ -1,34 +1,27 @@
-# Learning Jenkins
-This is the repository for the LinkedIn Learning course `Learning Jenkins`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Learning Jenkins, 01-03: Install Jenkins on macOS
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+# Prerequisites
+The target system should be running a recent version of the macOS
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+You will need to be able to access the system via CLI and via HTTP on port `8080`.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+You will need to have [Homebrew](https://brew.sh/) installed.
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+You may need to have `root` permission on the target system.
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+# Installation
+In a terminal, run the following commands:
+```
+brew install java
+brew install jenkins
+brew services start jenkins
+cat ~/.jenkins/secrets/initialAdminPassword
+```
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+# Using the Initial Admin Password
+Run the following command and copy the output:
+```
+cat ~/.jenkins/secrets/initialAdminPassword
+```
 
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-
+Open a browser to [localhost:8080](http://localhost:8080) and enter the initial admin password.
