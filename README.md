@@ -22,11 +22,11 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- OpenJDK11
-    - Git
-    - Jenkins
+	- [OpenJDK11](https://docs.microsoft.com/en-us/java/openjdk/download)
+    - [Git](https://git-scm.com/downloads)
+    - [Jenkins](https://www.jenkins.io/download/)
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. See the README file in each branch for specific instrusctions related to that lesson.
+3. See the README file in each branch for specific instrusctions related to the corresponding lesson.
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
