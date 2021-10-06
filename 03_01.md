@@ -14,7 +14,7 @@ Create a freestyle job and configure it as follows:
 
 1. Under `Source Code Management`, select `Git` and enter the following URL:
 ```
-https://github.com/managedkaos/apache-maven-hello-world
+https://github.com/LinkedInLearning/learning-jenkins-3003221
 ```
 2. **MAKE SURE TO SET THE `Branch Specifier` to `*/03_01`**.
 3. Add a build step using `Invoke Top-Level Maven Target`.
