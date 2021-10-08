@@ -1,7 +1,7 @@
 # Learning Jenkins, 02-07: Run and Monitor Jobs
 Use the console to create a freestyle job with one build step.
 
-# MacOS, Linux, and Docker
+## MacOS, Linux, and Docker
 If you are running Jenkins on MacOS, Linux, or Docker:
 
 1. Select the `Execute shell` build step.
@@ -15,7 +15,7 @@ done
 exit 1
 ```
 
-# Troubleshooting Errors
+## Troubleshooting Errors
 If you select the `Execute Windows batch command` build step, you will see an error similar to the following:
 ```
 Building in workspace /var/jenkins_home/workspace/hello
