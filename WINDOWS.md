@@ -1,6 +1,8 @@
 # Learning Jenkins, 03-05: String Parameters
 Create a freestyle job with one build step.
 
+Add a string parameter for `VERSION_NUMBER`.
+
 ## WINDOWS SYSTEMS
 If you are running Jenkins on a Windows system:
 
