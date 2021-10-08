@@ -1,7 +1,7 @@
 # Learning Jenkins, 03-05: String Parameters
 Create a freestyle job with one build step.
 
-# WINDOWS SYSTEMS
+## WINDOWS SYSTEMS
 If you are running Jenkins on a Windows system:
 
 1. Select the `Execute Windows batch command` build step
@@ -11,5 +11,5 @@ If you are running Jenkins on a Windows system:
 @echo VERSION_NUMBER = %VERSION_NUMBER%
 ```
 
-# Troubleshooting Errors
+## Troubleshooting Errors
 
