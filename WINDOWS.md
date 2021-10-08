@@ -1,7 +1,7 @@
 # Learning Jenkins, 02-07: Run and Monitor Jobs
 Use the console to create a freestyle job with one build step.
 
-# WINDOWS SYSTEMS
+## WINDOWS SYSTEMS
 If you are running Jenkins on a Windows system:
 
 1. Select the `Execute Windows batch command` build step
@@ -15,7 +15,7 @@ for /L %%i in (1,1,30) do (
 exit /b 1
 ```
 
-# Troubleshooting Errors
+## Troubleshooting Errors
 If you select the `Execute shell` build step, you will see an error similar to the following:
 ```
 Building in workspace C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\hello-jenkins
