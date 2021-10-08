@@ -1,9 +1,9 @@
 # Learning Jenkins, 01-04: Install Jenkins as a Container
 
-# Prerequisites
+## Prerequisites
 You will need to have [Docker](https://docs.docker.com/get-docker/) installed on your local system.
 
-# Installation
+## Installation
 In a terminal, run the following commands:
 
 ```
@@ -16,7 +16,7 @@ docker run --detach --publish 8080:8080 --volume jenkins_home:/var/jenkins_home 
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-# Using the Initial Admin Password
+## Using the Initial Admin Password
 Run the following command and copy the output:
 ```
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
