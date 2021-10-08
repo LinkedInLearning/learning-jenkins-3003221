@@ -1,6 +1,8 @@
 # Learning Jenkins, 03-07: Boolean Parameters
 Create a freestyle job with one build step.
 
+Add a boolean parameter called `RUN_TESTS`.
+
 ## WINDOWS SYSTEMS
 If you are running Jenkins on a Windows system:
 
