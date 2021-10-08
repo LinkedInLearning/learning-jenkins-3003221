@@ -13,18 +13,18 @@ Give your Maven installation a name and check the option to `Install automatical
 Create a freestyle job and configure it as follows:
 
 1. Under `Source Code Management`, select `Git` and enter the following URL:
-```
-https://github.com/managedkaos/apache-maven-hello-world
-```
-2. **MAKE SURE TO SET THE `Branch Specifier` to `*/03_01`**.
-3. Add a build step using `Invoke Top-Level Maven Target`.
-4. Select the Maven version you configured in the previous step.
-5. For the goal, enter `package`.
-6. Add a build step using the `Execute shell` build step and enter:  
-```
-java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
-```    
-7. Save the job and start the build.
+    ```
+    https://github.com/managedkaos/apache-maven-hello-world
+    ```
+1. **MAKE SURE TO SET THE `Branch Specifier` to `*/03_01`**.
+1. Add a build step using `Invoke Top-Level Maven Target`.
+1. Select the Maven version you configured in the previous step.
+1. For the goal, enter `package`.
+1. Add a build step using the `Execute shell` build step and enter:  
+    ```
+    java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
+    ```    
+1. Save the job and start the build.
 
 ## Troubleshooting Errors
 ```
