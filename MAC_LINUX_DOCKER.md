@@ -1,6 +1,8 @@
 # Learning Jenkins, 03-07: Boolean Parameters
 Create a freestyle job with one build step.
 
+Add a boolean parameter called `RUN_TESTS`.
+
 ## MacOS, Linux, and Docker
 If you are running Jenkins on MacOS, Linux, or Docker:
 
