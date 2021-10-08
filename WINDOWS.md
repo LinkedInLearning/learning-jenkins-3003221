@@ -1,6 +1,6 @@
 # Learning Jenkins, 03-01: Using a global build tool
 
-# Prerequisites
+## Prerequisites
 You will need to configure Maven as a global build tool.
 
 In the Jenkins web interface, go to:
@@ -9,26 +9,24 @@ In the Jenkins web interface, go to:
 
 Give your Maven installation a name and check the option to `Install automatically`.
 
-# Setting up the Jenkins Job
+## Setting up the Jenkins Job
 Create a freestyle job and configure it as follows:
 
 1. Under `Source Code Management`, select `Git` and enter the following URL:
 ```
 https://github.com/managedkaos/apache-maven-hello-world
 ```
-2. **MAKE SURE TO SET THE `Branch Specifier` to `*/main`**.
+2. **MAKE SURE TO SET THE `Branch Specifier` to `*/03_01`**.
 3. Add a build step using `Invoke Top-Level Maven Target`.
 4. Select the Maven version you configured in the previous step.
 5. For the goal, enter `package`.
-
-# WINDOWS SYSTEMS
-Select the `Execute Windows batch command` build step
+6. Add a new build step using the `Execute Windows batch command` and enter
 ```
 java -cp target/hello-1.0-SNAPSHOT.jar com.learningjenkins.App
 ```
 Save the job and start the build.
 
-# Troubleshooting Errors
+## Troubleshooting Errors
 ```
 ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
 ```
