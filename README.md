@@ -1,7 +1,7 @@
 # Learning Jenkins, 02-06: Run and Monitor Jobs
 Use the console to create a freestyle job with one build step.
 
-# WINDOWS SYSTEMS
+## WINDOWS SYSTEMS
 If you are running Jenkins on a Windows system:
 
 1. Select the `Execute Windows batch command` build step
@@ -16,7 +16,7 @@ for /L %%i in (1,1,30) do (
 
 [Follow this link for more details on Windows](WINDOWS.md)
 
-# MacOS, Linux, and Docker
+## MacOS, Linux, and Docker
 If you are running Jenkins on MacOS, Linux, or Docker:
 
 1. Select the `Execute shell` build step.
