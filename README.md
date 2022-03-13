@@ -12,7 +12,7 @@ for /L %%i in (1,1,30) do (
   @echo %%i
   @ping localhost -n 2 >NUL
 )
-exit /b 1
+exit /b 0
 ```
 
 [Follow this link for more details on Windows](WINDOWS.md)
